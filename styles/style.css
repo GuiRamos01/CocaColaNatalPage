@@ -1,80 +1,171 @@
+html, body {
+    margin: 0;
+    font-family: TCC !important;
+}
+
 @font-face {
     font-family: TCC;
     src: url(/fonts/TCCCUnityHeadlineBold.woff2);
 }
 
-html, body {
-    width: 100%;
-    margin: 0;
-    font-family: TCC !important;
-    background-color: #ffc955 !important;
-
-    height: 100% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-h4 {
-    margin: 0;
+@font-face {
+    font-family: You-2013;
+    src: url(/fonts/You2013.woff2);
 }
 
 header {
     width: 100%;
+    background-color: white;
+    box-shadow: 0px 10px 31px -14px rgba(0,0,0,0.38);
+    position: fixed;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 13px 21px;
 }
 
 main {
+    padding-top: 60px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-nav ul {
+    display: flex;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.navbar-nav ul li{
+    color: #000;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.navbar-nav ul li:hover {
+    color: rgb(192, 3, 3);
+    transition: all 0.3s ease;
+}
+
+.navbar-nav ul li:after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    display: block;
+    transition: all 0.3s ease;
+    bottom: 25%;
+    margin-top: 3px;
+}
+
+.navbar-nav ul li:hover::after {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(192, 3, 3);
+}
+
+.button-login {
+    width: 135px;
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 19px;
+    color: #000;
+    border: 3px solid #bebebe;
+    padding: 10px;
+    cursor: pointer;
+    font-family: TCC;
+    transition: all 0.3s ease;
+}
+
+.button-login:hover {
+    border: 3px solid #000;
+}
+
+.button-login a {
+    color: #000;
+}
+
+#div1 h1, #div2 h2 {
+    font-family: You-2013;
+    font-weight: 500;
+}
+
+#div1 {
+    background-color: #db3534;
     padding: 15px;
+    height: 500px;    
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
-.links {
+#div2 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 660px;
+    padding: 25px 17px;
+    background-color: yellowgreen;
 }
 
-.links button {
-    width: 550px;
-    background-color: #fff !important;
-    border: 4px solid #fff;
-    border-radius: 20px !important;
-    padding: 25px !important;
-    margin: 9px !important;
-    box-shadow: 6px 8px 18px 3px rgba(0,0,0,0.13);
-    transition: 0.5s;
+#div2 .text {
+    width: 520px;
+    font-family: TCC !important;
 }
 
-button.button-ferramentas {
-    background-color: rgb(49, 49, 49) !important;
-    color: #fff;
-    border: 0;
-    border-radius: 27px !important;
-    padding: 6px 12px !important;
-    margin: 5px;
-    box-shadow: none;
-    cursor: default !important;
+#div1 h3 {
+    font-size: 1.2rem;
 }
 
-.links button:hover{
-    width: 570px;
-    background-color: transparent !important;
-    border: 4px solid #fff;
+#div2 .text h2 {
+    font-size: 2.2rem;
 }
 
-button a {
-    text-decoration: none;
+#div2 img {
+    padding-right: 80px;
+    width: 100%;
 }
 
-button h3 {
-    color: #000 !important;
+#title img {
+    width: 150px;
+    padding-right: 10px;
+}
+
+h1, h2, h3 {
+    color: #fff !important;
+}
+
+.text h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 25px;
+}
+
+.dropdown {
+    padding-right: 10px;
+}
+
+button#dropdownMenuButton {
+    background-color: transparent;
+    border-radius: 25px;
+    border: 3px solid #105801;
+    color: #105801;
+    padding: 7px;
+    font-family: TCC !important;
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+footer p {
+    font-size: 1rem;
     margin: 0;
+    color: #000;
 }
