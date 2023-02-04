@@ -96,7 +96,7 @@ nav a {
 }
 
 #div1 {
-    background-color: #db3534;
+    background: linear-gradient(90deg, rgb(156 3 3) 0%, rgba(255,0,0,1) 100%);
     padding: 15px;
     height: 500px;    
     font-size: 20px;
@@ -111,7 +111,7 @@ nav a {
     align-items: center;
     height: 660px;
     padding: 25px 17px;
-    background-color: yellowgreen;
+    background: linear-gradient(2deg, #598303 0%, #9acd32 100%);
 }
 
 #div2 .text {
@@ -153,8 +153,8 @@ h1, h2, h3 {
 button#dropdownMenuButton {
     background-color: transparent;
     border-radius: 25px;
-    border: 3px solid #105801;
-    color: #105801;
+    border: 3px solid #fff;
+    color: #fff;
     padding: 7px;
     font-family: TCC !important;
 
